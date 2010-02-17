@@ -1,0 +1,8 @@
+function [] = TestDiff()
+%TESTDIFF Plot DF_Gen theta vs our own calculated theta
+
+    x = -400:500
+    [X1, X2, originheta]
+
+end
+
