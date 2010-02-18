@@ -22,30 +22,33 @@ $$t1(Xv) = \frac{p1}{c}$$ $$t2(Xv) = \frac{p2}{c}$$
 Waarbij:
 $$p1 = \sqrt{Xv^2 + Yr^2}$$ $$p2 = \sqrt{(Xv-d)^2 + Yr^2}$$ 
 
+\newpage
 \section{Opgave 2}
-De ontvangen signalen worden aangegeven met x1 en x2. In figuur \ref{2a} staan drie periodes van de functies x1 en x2 waarbij:
+De ontvangen signalen worden aangegeven met x1 en x2. In figuur \ref{2a} staan drie periodes van de functies x1 en x2 waarbij Xv 100m is:
 
-$$x1(t) = s(t - t1)$$ $$x2(t) = s(t - t2)$$ en $$s(t) = 1000*sin(400*2\pi*t)$$
-Xv is voor deze opdracht 100m.
+$$x1(t) = s(t - t1)$$ $$x2(t) = s(t - t2)$$ $$s(t) = 1000*sin(400*2\pi*t)$$
 
-If figuur \ref{2b} is ingezoomd op de dalen om zo het relatieve tijdverschil tussen x1 en x2 te zien. Hieruit schatten wij dat er sprake is van een relatieve tijdverschuiving van \begin{math}8.5*10^4 sec\end{math}, deze komt door het verschil van de dalen $3,65*10^{-3}$ en $2.8*10^{-3}$ te berekenen.
 
-\begin{wrapfigure}{r}{40mm}
+\begin{figure}[h]
+	\center
 	\begin{center}
-	\includegraphics{2a.png}
+	\includegraphics[width = 8cm]{2a.png}
 	\caption{Plot twee ontvangen signalen}
 	\end{center}
  \label{2a}
-\end{wrapfigure}
+\end{figure}
 
-\begin{wrapfigure}{r}{40mm}
+If figuur \ref{2b} is ingezoomd op de dalen om zo het relatieve tijdverschil tussen x1 en x2 te zien. Hieruit schatten wij dat er sprake is van een relatieve tijdverschuiving van \begin{math}8.5*10^4 sec\end{math}, deze komt door het verschil van de dalen $3,65*10^{-3}$ en $2.8*10^{-3}$ te berekenen.
+
+\begin{figure}[h]
 	\begin{center}
-	\includegraphics{2b.png}
+	\includegraphics[width = 8cm]{2b.png}
 	\caption{Plot ingezoomd op de dalen van de twee signalen}
 	\end{center}
  \label{2b}
-\end{wrapfigure}
+\end{figure}
 
+\newpage
 \section{Opgave 3}
 De waarde van \begin{math}\varphi\end{math} hebben we bepaald door middel van het tijdverschil van de twee ontvangen signalen, gegeven het verschil berekend in de vorige opgave, volgens:
 $$\varphi = sin^{-1}(\frac{d}{c} * (t_{1} - t_{2})) = 0.79 rad$$
@@ -85,18 +88,42 @@ $$= angle\{A_{1}*A_{2}*e^{j*(\varphi_{1}-\varphi_{2})}\}$$
 $$= \varphi_{1}-\varphi_{2} = \Delta\varphi$$
 
 \section{Opgave 5}
-\begin{figure}
+
+Het testen van onze functie hebben we gedaan door de methode TestDiff te maken. Deze methode staat hieronder uitgewerkt.
+
+\begin{lstlisting}
+function [] = TestDiff()
+%TESTDIFF Plot DF_Gen theta vs our own calculated theta
+%	901 samples are taken between -400 and 500 where our own calculated theta via the function CalcDir is compared to the theta from DF_Gen via a plot.
+    x = -400:500;
+    [X1, X2, originalTheta] = DF_gen(x);
+    ourTheta = CalcDir(X1, X2);
+    hold off;
+    plot(x, originalTheta);
+    hold on;
+    plot(x, ourTheta);
+    hold off;
+end
+\end{lstlisting}
+
+De verkregen plot staat in figuur \ref{5a}. In de plot lijkt er sprake te zijn van een enkele lijn en dus precies gelijke waarden uit de twee functies. Echter is if figuur \ref{5b} te zien dat het wel degelijk gaat om twee verschillend gevonden hoeken.
+
+\begin{figure}[h]
 	\center
-	\includegraphics{5a.png}
+	\includegraphics[width = 10cm]{5a.png}
 	\caption{Plot gemaakt door functie TestDiff}
  \label{5a}
 \end{figure}
 
 
-In figuur \ref{5a}
-
-\begin{figure}
- \label{5b}
+\begin{figure}[h]
+	\center
+	\includegraphics[width = 10cm]{5b.png}
+	\caption{Plot waarbij de verschillende uitkomsten van de functies binnen TestDiff zichbaar zijn}
+ \label{5b}	
 \end{figure}
+
+Hoewel er een verschil is tussen de echte theta en de gevonden theta volgens onze functie CalcDir is dit verschil dermate klein dat CalcDir een zeer betrouwbare geluidsrichting geeft.
+
 
 \end{document}

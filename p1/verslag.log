@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.2.5)  17 FEB 2010 15:58
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.5)  18 FEB 2010 16:30
 entering extended mode
  %&-line parsing enabled.
 **verslag.tex
@@ -34,31 +34,29 @@ Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 (/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: dvips.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 130.
 
-(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
-)
-(/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
+\Gread@gobject=\count87
 ))
 (/usr/share/texmf-texlive/tex/latex/listings/listings.sty
 (/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-\lst@mode=\count87
+\lst@mode=\count88
 \lst@gtempboxa=\box26
 \lst@token=\toks15
-\lst@length=\count88
+\lst@length=\count89
 \lst@currlwidth=\dimen103
-\lst@column=\count89
-\lst@pos=\count90
+\lst@column=\count90
+\lst@pos=\count91
 \lst@lostspace=\dimen104
 \lst@width=\dimen105
-\lst@newlines=\count91
-\lst@lineno=\count92
-\c@lstlisting=\count93
+\lst@newlines=\count92
+\lst@lineno=\count93
+\c@lstlisting=\count94
 \lst@maxwidth=\dimen106
 
 (/usr/share/texmf-texlive/tex/latex/listings/lstpatch.sty
@@ -66,8 +64,8 @@ File: lstpatch.sty 2004/10/17 1.3b (Carsten Heinz)
 )
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2004/09/07 1.3 (Carsten Heinz)
-\c@lstnumber=\count94
-\lst@skipnumbers=\count95
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
 \lst@framebox=\box27
 )
 (/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
@@ -87,7 +85,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/etc/texmf/tex/latex/config/graphics.cfg
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: dvips.def on input line 90.
+Package graphics Info: Driver file: pdftex.def on input line 90.
 )
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
@@ -109,6 +107,20 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
+
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count97
+\scratchdimen=\dimen109
+\scratchbox=\box28
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen110
+\MPnumerator=\count101
+\everyMPtoPDFconversion=\toks17
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -119,153 +131,69 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 19.
+ [1
 
-[1
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<2a.png, id=13, 624.3325pt x 469.755pt>
+File: 2a.png Graphic file (type png)
+ <use 2a.png>
+<2b.png, id=14, 624.3325pt x 469.755pt>
+File: 2b.png Graphic file (type png)
+ <use 2b.png>
 
-]
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-! LaTeX Error: Environment wrapfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33 \begin{wrapfigure}
-                       {r}{40mm}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Cannot determine size of graphic in 2a.png (no BoundingBox).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 	\includegraphics{2a.png}
-                              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: 2a.png Graphic file (type eps)
-<2a.png>
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.36 	\caption
-              {Plot twee ontvangen signalen}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: \begin{document} ended by \end{wrapfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 \end{wrapfigure}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment wrapfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 \begin{wrapfigure}
-                       {r}{40mm}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Cannot determine size of graphic in 2b.png (no BoundingBox).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.43 	\includegraphics{2b.png}
-                              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: 2b.png Graphic file (type eps)
-<2b.png>
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 	\caption
-              {Plot ingezoomd op de dalen van de twee signalen}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: \begin{document} ended by \end{wrapfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47 \end{wrapfigure}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (5.5774pt too wide) in paragraph at lines 60--61
+[2 <./2a.png>]
+Overfull \hbox (5.5774pt too wide) in paragraph at lines 63--64
 \OT1/cmr/m/n/10 geleverde func-tie DF[]Gen. De werk-ing van de func-tie staat b
 ij de code beschreven. 
  []
 
-[2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 70.
+[3 <./2b.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
 
+<5a.png, id=25, 449.68pt x 337.26pt>
+File: 5a.png Graphic file (type png)
+ <use 5a.png>
 
-! LaTeX Error: Cannot determine size of graphic in 5a.png (no BoundingBox).
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 	\includegraphics{5a.png}
-                              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<5b.png, id=26, 449.68pt x 337.26pt>
+File: 5b.png Graphic file (type png)
+ <use 5b.png>
 
-File: 5a.png Graphic file (type eps)
-<5a.png> [3] (./verslag.aux)
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[4] [5 <./5a.png (PNG copy)> <./5b.png (PNG copy)>] (./verslag.aux) ) 
 Here is how much of TeX's memory you used:
- 2548 strings out of 94102
- 34097 string characters out of 1165834
- 150081 words of memory out of 1500000
- 5848 multiletter control sequences out of 10000+50000
+ 2767 strings out of 94101
+ 36445 string characters out of 1165811
+ 160887 words of memory out of 1500000
+ 6063 multiletter control sequences out of 10000+50000
  7941 words of font info for 28 fonts, out of 1200000 for 2000
  637 hyphenation exceptions out of 8191
- 26i,6n,40p,1224b,2042s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 26i,6n,40p,381b,2048s stack positions out of 5000i,500n,6000p,200000b,5000s
+</usr/shar
+e/texmf-texlive/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf-texlive/fon
+ts/type1/bluesky/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/
+cmex10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmmi10.pfb></usr/sh
+are/texmf-texlive/fonts/type1/bluesky/cm/cmmi7.pfb></usr/share/texmf-texlive/fo
+nts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm
+/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr17.pfb></usr/sha
+re/texmf-texlive/fonts/type1/bluesky/cm/cmr5.pfb></usr/share/texmf-texlive/font
+s/type1/bluesky/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cm
+r8.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/
+texmf-texlive/fonts/type1/bluesky/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/
+type1/bluesky/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmt
+i8.pfb>
+Output written on verslag.pdf (5 pages, 124976 bytes).
+PDF statistics:
+ 82 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on verslag.dvi (3 pages, 11372 bytes).
