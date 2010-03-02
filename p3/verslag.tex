@@ -65,7 +65,17 @@ In figuur \ref{fig:opgave6}
 \end{figure}
 
 \section{Opgave 7}
+De waarde van r wordt bepaald door de sterkte die we aan de echo toekennen, het is immers de amplitude van het signaal P tijdeenheden terug dus: $r = 0.9$. P is de tijdverschuiving van de echo uigedrukt in tijdseenheden van de sample frequentie dus $p = \delta~t*f_s = 8000 * 0.2 = 1600$.
 
+\section{Opgave 8}
+De echo van een signaal kan met een FIR filter met convolutie $[1, 0_1 .. 0_p-1, 0.9]$ gemaakt worden. In matlab wordt het nieuwe signaal yy uit bronsignaal x2 berekend: $yy = conv(x2, [1 zeros(1,8000*0.2 - 1) 0.9]);$. Het oorspronkelijke signaal x2 en gefilterd signaal yy zijn uitgezet in figuur \ref{fig:opgave8}.
+\begin{figure}[h]
+  \centering
+ 	\subfloat[][x2[n]]{\includegraphics[width=0.4\textwidth]{content/8x2.png}}
+	\subfloat[][yy[n]]{\includegraphics[width=0.4\textwidth]{content/8yy.png}}
+  \caption{Het orginele signaal x2 verkregen uit functie labdat.mat en het signaal met echo yy}
+  \label{fig:opgave8}
+\end{figure}
 %\begin{figure}[h]
  % \centering
  % \subfloat[][$I_0 = 1$]{\label{fig:b1i1}\includegraphics[width=0.4\textwidth]{content/b1i1.png}}                
