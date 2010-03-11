@@ -60,6 +60,10 @@ $L=40 --> 0,043*pi $
 
 
 \section{Opgave 2.3}
+$hh = 2/L*cos(w*(0:(L-1))); 
+[H,W] = freqz(hh); 
+min(min(abs(H(0.7*length(H): length(H))) <= 0.1), (min(abs(H(1:0.3*length(H))) <= 0.1) == 1))$
+
 \section{Opgave 2.4}
 \begin{figure}[h]
   \centering
