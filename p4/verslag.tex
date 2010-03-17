@@ -18,10 +18,10 @@
  
 \section{Opgave 1.1}
 De filterco\"eficienten van het gezamelijke filter worden berekend door de convolutie van de twee losse filter co\"eficienten te doen volgens:
-$$hh = conv([1 -2*cos(0.44*pi) 1], [1 -2*cos(0.7*pi) 1])$$
-$$hh = [1 0,8008 1,5594 0,8008 1]$$
+$$hh = conv([1, -2*cos(0.44*pi), 1], [1, -2*cos(0.7*pi), 1])$$
+$$hh = [1, 0.8008 1.5594, 0.8008, 1]$$
 De gain van het filter en de plot worden gemaakt door:
-$$[H, W] = freqz( conv([1 -2*cos(0.44*pi) 1], [1 -2*cos(0.7*pi) 1]) )$$
+$$[H, W] = freqz( conv([1, -2*cos(0.44*pi), 1], [1, -2*cos(0.7*pi), 1]) )$$
 $$plot(W/pi, abs(H));$$
 De resulterende plot staat in figuur \ref{fig:opgave1_1}.
 
@@ -78,9 +78,9 @@ $$hh2 = 2/L* cos(W*nn2)$$
 $$length(find(abs(H/max(H)) > 1/sqrt(2)))) / length(W)$$
 
 De gevonden breedte horende bij de ingevoerde waarde van L zijn als volgt:
-$$L=10 --> 0,164*pi$$
-$$L=20 --> 0,086*pi$$
-$$L=40 --> 0,043*pi$$
+$$L=10 \rightarrow 0,164*pi$$
+$$L=20 \rightarrow 0,086*pi$$
+$$L=40 \rightarrow 0,043*pi$$
 
 
 \section{Opgave 2.3}
